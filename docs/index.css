@@ -1,0 +1,77 @@
+/* 폰트 설정 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+html > body {
+  font-family: "Noto Sans KR";
+  text-underline-position: under;
+}
+/* 노말라이즈 */
+
+
+/* 라이브러리 */
+.detail-page-1{
+  height: 400px;}
+
+.con-min-wid {
+  min-width: 320px;
+}
+:root {
+  --site-width: 1280px;
+}
+
+.con {
+  max-width: var(--site-width);
+}
+
+/*배너시작*/
+.banner-img-1{
+  background-image: url(https://cdn.jsdelivr.net/gh/chaeryeong1/project_lion_img/mbti/mbti_hero_1920.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+  background-color: black;
+}
+
+/*배너이미지~텍스트 반응형*/
+
+@media (max-width: 1023px){
+  .banner-img-1{
+    background-size:auto 300px;
+  background-position: top;
+  padding-bottom:60px;
+  }
+  .detail-page-1{
+    height:300px;
+  }
+  .detail-page-txt-box{
+    width:355px;
+    height:80px;
+    
+  }
+  
+}
+
+@media (max-width: 767px){
+  .banner-img-1{
+    background-size:auto 200px;
+  background-position: top;
+  }
+  
+  .detail-page-1{
+    height:200px;
+  }
+  .detail-page-txt-box>h1,.detail-page-txt-box h2{
+    display:none;
+  }
+}
+
+/*데스크탑 고정바*/
+.detail-page-txt-hold{
+ width:760px;
+  height:420px;
+}
+
